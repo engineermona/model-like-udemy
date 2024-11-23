@@ -1,0 +1,347 @@
+{% extends "base.html" %}
+{% block body %}   
+<div class="max-w-7xl mx-auto p-6 flex">
+    <!-- Filter Section -->
+    <div class="w-1/4 bg-white p-4 shadow-md rounded-lg mr-6">
+     <h2 class="text-2xl font-semibold mb-4">
+      Filters
+     </h2>
+     <div class="mb-4">
+      <h3 class="text-lg font-medium mb-2">
+       Category
+      </h3>
+      <select class="w-full p-2 border border-gray-300 rounded">
+       <option>
+        All Categories
+       </option>
+       <option>
+        Development
+       </option>
+       <option>
+        Business
+       </option>
+       <option>
+        Design
+       </option>
+       <option>
+        Marketing
+       </option>
+      </select>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-medium mb-2">
+       Price
+      </h3>
+      <select class="w-full p-2 border border-gray-300 rounded">
+       <option>
+        All Prices
+       </option>
+       <option>
+        Free
+       </option>
+       <option>
+        Paid
+       </option>
+      </select>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-medium mb-2">
+       Rating
+      </h3>
+      <select class="w-full p-2 border border-gray-300 rounded">
+       <option>
+        All Ratings
+       </option>
+       <option>
+        4.5 &amp; up
+       </option>
+       <option>
+        4.0 &amp; up
+       </option>
+       <option>
+        3.5 &amp; up
+       </option>
+       <option>
+        3.0 &amp; up
+       </option>
+      </select>
+     </div>
+     <button class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      Apply Filters
+     </button>
+    </div>
+    <!-- Courses Section -->
+    <div class="w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+     <!-- Course Card 1 -->
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="A detailed image of a computer screen displaying code" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/WsfoI6SKy5UvJiPfmxhDeKhupGYife1URnWVurmFt8On0wXeE.jpg" width="600"/>
+      <div class="p-4">
+       <h2 class="text-xl font-semibold mb-2">
+        Learn JavaScript from Scratch
+       </h2>
+       <p class="text-gray-600 mb-4">
+        Master JavaScript with hands-on projects and real-world examples.
+       </p>
+       <div class="flex items-center mb-4">
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-gray-600">
+         (1200)
+        </span>
+       </div>
+       <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold text-gray-900">
+         $19.99
+        </span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Course Card 2 -->
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="A detailed image of a person writing code on a laptop" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/IDYefLz0aeQBBJgzBwMpxCLHOfgz6ggmYuXGmaobIzNUa4LPB.jpg" width="600"/>
+      <div class="p-4">
+       <h2 class="text-xl font-semibold mb-2">
+        Python for Data Science
+       </h2>
+       <p class="text-gray-600 mb-4">
+        Learn Python and apply it to data science projects and machine learning.
+       </p>
+       <div class="flex items-center mb-4">
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-gray-600">
+         (850)
+        </span>
+       </div>
+       <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold text-gray-900">
+         $29.99
+        </span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Course Card 3 -->
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="A detailed image of a person analyzing data on a computer screen" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/n64y4DCjlH7iBZjzhFtJHhiTG1a7kaIrSDSXe4KjQlUUDfyTA.jpg" width="600"/>
+      <div class="p-4">
+       <h2 class="text-xl font-semibold mb-2">
+        Data Analysis with Excel
+       </h2>
+       <p class="text-gray-600 mb-4">
+        Become proficient in data analysis using Microsoft Excel.
+       </p>
+       <div class="flex items-center mb-4">
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-gray-600">
+         (950)
+        </span>
+       </div>
+       <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold text-gray-900">
+         $24.99
+        </span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Course Card 4 -->
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="A detailed image of a person designing a website on a computer" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/l3GQMa3a6JITIdXD3gurdg5n4e0F1CJx6zmeUQJfGteva4LPB.jpg" width="600"/>
+      <div class="p-4">
+       <h2 class="text-xl font-semibold mb-2">
+        Web Design for Beginners
+       </h2>
+       <p class="text-gray-600 mb-4">
+        Learn the basics of web design and create stunning websites.
+       </p>
+       <div class="flex items-center mb-4">
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-gray-600">
+         (700)
+        </span>
+       </div>
+       <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold text-gray-900">
+         $14.99
+        </span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Course Card 5 -->
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="A detailed image of a person working on a graphic design project on a computer" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/c45TMB4RhXraGJS0ACfJN47RC8FD0frPN1nt54YLmZ2qGelnA.jpg" width="600"/>
+      <div class="p-4">
+       <h2 class="text-xl font-semibold mb-2">
+        Graphic Design Masterclass
+       </h2>
+       <p class="text-gray-600 mb-4">
+        Become a professional graphic designer with this comprehensive course.
+       </p>
+       <div class="flex items-center mb-4">
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-gray-600">
+         (1500)
+        </span>
+       </div>
+       <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold text-gray-900">
+         $34.99
+        </span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Course Card 6 -->
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="A detailed image of a person working on a digital marketing strategy on a computer" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/efAMAKJjUVpNJEIfnmaGOAD8Yz0bfiiOHPfLvzSAfjOvphv8E.jpg" width="600"/>
+      <div class="p-4">
+       <h2 class="text-xl font-semibold mb-2">
+        Digital Marketing 101
+       </h2>
+       <p class="text-gray-600 mb-4">
+        Learn the fundamentals of digital marketing and grow your business online.
+       </p>
+       <div class="flex items-center mb-4">
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-yellow-500">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="text-gray-300">
+         <i class="fas fa-star">
+         </i>
+        </span>
+        <span class="ml-2 text-gray-600">
+         (600)
+        </span>
+       </div>
+       <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold text-gray-900">
+         $19.99
+        </span>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+{% endblock body %}
